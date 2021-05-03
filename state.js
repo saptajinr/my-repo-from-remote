@@ -1,7 +1,7 @@
-const coffeStock = {
+const coffeeStock = {
     arabica:  100,
     robusta: 150,
     liberica: 200
 }
 
-module.export = coffeStock;
+module.exports = coffeeStock;
