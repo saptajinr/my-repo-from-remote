@@ -1,4 +1,14 @@
-const coffeeStock = require('./state');
+import coffeeStock from './state.js';
+
+const displayStock = stock => {
+    for (const type in stock) {
+        console.log(type);
+    }
+}
+
+displayStock(coffeeStock);
+
+/* const {coffeeStock, isCoffeeMachineReady} = require('./state');
 
 const makeCoffee = (type, milligrams) => {
     if(coffeeStock[type] >= milligrams) {
@@ -8,4 +18,6 @@ const makeCoffee = (type, milligrams) => {
     }
 }
 
-makeCoffee("robusta", 180)
+//makeCoffee("robusta", 180)
+console.log(coffeeStock);
+console.log(isCoffeeMachineReady); */
