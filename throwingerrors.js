@@ -1,6 +1,4 @@
-let json = '{"name": "Yoda", "age": 30}';
-//let json ='{bad json}';
-//let json = '{"age":20}';
+let json = '{"age":30}';
 
 try {
     let user = JSON.parse(json);
@@ -9,8 +7,6 @@ try {
         throw new SyntaxError("'name' is required.");        
     } 
     
-    errorCode;
-
     console.log("Nama: "+user.name);
     console.log("Umur: "+user.age);
 } catch (error) {
